@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Adarsha Aryal | Website{% endblock %}
+{% block content %}
+<div class="content">
+    <section id="hero">
+        <img src="{% static 'img/adarsha.png' %}" alt="Adarsha Aryal" class="hero-img">
+        <h1>Hello, I'm <span>Adarsha Aryal</span></h1>
+        <p>Data Science Student | Exploring the World Through Data</p>
+        <div class="social-links">
+            <a href="https://github.com/Adarsha653"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/aryaladarsha"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/adarsha653"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/adarsha.aryal"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/adarsha.aryall"><i class="fab fa-facebook"></i></a>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Adarsha Aryal, a Master of Data Science student at Monash University with a background in Business Administration and Electrical Engineering. I’m passionate about using data to solve real-world problems and have experience in machine learning, big data, and cloud computing. Previously, I worked as a Project Engineer in Nepal, leading telecom and infrastructure projects for major clients like Nepal Telecom. My cross-disciplinary background blends technical skills and business insight. I'm proficient in Python, R, SQL, and C/C++, and have worked on projects ranging from game development to real estate analytics. I’m currently seeking internships or entry-level roles in data science, analytics, or AI.
+        </p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <span>Python</span>
+            <span>R</span>
+            <span>SQL</span>
+            <span>C/C++</span>
+            <span>Machine Learning</span>
+            <span>Big Data</span>
+            <span>Cloud Computing</span>
+            <span>Data Visualization</span>
+            <span>Data Analysis</span>
+            <span>Data Engineering</span>
+            <span>Data Science</span>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <img src="{% static 'img/movie_sentiment_img.jpg' %}" alt="Project 1">
+            <h3>Movie Sentiment Analysis</h3>
+            <p>This project analyzes IMDb movie reviews to determine whether the sentiment expressed is positive or negative. Using natural language processing (NLP) techniques like tokenization, TF-IDF vectorization, and machine learning models such as Logistic Regression and Naive Bayes, the system classifies user opinions with high accuracy. It includes data preprocessing, model evaluation, and visualization of results for better interpretability.</p>
+            <a href="https://github.com/Adarsha653/Movie_Setiment_Analysis">View on GitHub</a>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contacts</h2>
+        <p>
+            <a href="mailto:adarsha.aryal@gmail.com" target="_blank" title="Email">
+              <i class="fas fa-envelope" style="color:#EA4335; font-size:1.7em; vertical-align:middle;"></i>
+              <span style="margin-left:8px; vertical-align:middle;">adarsha.aryal@gmail.com</span>
+            </a>
+        </p>
+        <p>
+            <a href="tel:+610449020354" target="_blank" title="Call">
+            <i class="fas fa-phone" style="color:#34A853; font-size:1.7em; vertical-align:middle;"></i>
+            <span style="margin-left:8px; vertical-align:middle;">+61-0449 020 354</span>
+            </a>
+        </p>
+        <p><a href="https://www.google.com/maps/place/Melbourne,+Australia" target="_blank" title="View on Google Maps">
+            <i class="fas fa-map-marker-alt" style="color:#4285F4; font-size:1.7em; vertical-align:middle;"></i>
+            <span style="margin-left:8px; vertical-align:middle;">Melbourne, Australia</span>
+            </a>
+        </p>
+    </section>
+</div>
+{% endblock %}
